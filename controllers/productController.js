@@ -31,4 +31,22 @@ async function getProduct(req, res, productId) {
     }
 }
 
-module.exports = {getProducts, getProduct};
+// @desc POST single product
+// @Route POST api/products
+async function createProduct(req, res) {
+    try {
+        const product = {
+            name: "Sony Potrait Ultra Wide Camera",
+            description: "The all new Sony super potrait camera features...",
+            price: "2000"
+        }
+
+        const newProduct = await Product.create(product);
+
+        res.writeHead(201, headerValues);
+        res.end(JSON.stringify(newProduct));
+    } catch (error) {
+        console.log(error)
+    }
+}
+module.exports = {getProducts, getProduct, createProduct};
