@@ -1,5 +1,6 @@
 const Product = require("../models/productModels");
 const headerValues = {"Content-Type": "application/json"};
+const {getPostData} = require("../utils");
 
 // @desc Get all products
 // @Route GET api/products
@@ -34,19 +35,12 @@ async function getProduct(req, res, productId) {
 // @desc POST single product
 // @Route POST api/products
 async function createProduct(req, res) {
-    try {
-        const product = {
-            name: "Sony Potrait Ultra Wide Camera",
-            description: "The all new Sony super potrait camera features...",
-            price: "2000"
-        }
+   const postData = await getPostData(req);
+   const {name, description, price} = postData;
 
-        const newProduct = await Product.create(product);
+    const newProduct = await Product.create({name, description, price});
 
-        res.writeHead(201, headerValues);
-        res.end(JSON.stringify(newProduct));
-    } catch (error) {
-        console.log(error)
-    }
+    res.writeHead(201, headerValues);
+    res.end(JSON.stringify(newProduct));
 }
 module.exports = {getProducts, getProduct, createProduct};
