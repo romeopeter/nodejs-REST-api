@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
         PUT: "PUT",
         DELETE: "DELETE"
     };
-    
+
     // Incorrect method and route
     if (req.method !== requestMethods[req.method] || req.url !== "/api/products") {
         res.writeHead(404, headerValues);
