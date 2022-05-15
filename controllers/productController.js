@@ -75,6 +75,8 @@ async function updateProduct(req, res, productId) {
     }
 }
 
+// @desc Delete single product
+// @Route DELETE api/products/:id -->[0-9]
 async function deleteProduct(req, res, productId) {
     try {
         const product = await Product.findById(productId);
