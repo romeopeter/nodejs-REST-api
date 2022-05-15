@@ -1,1 +1,32 @@
-[{"id":1,"name":"Apple Macbook Pro 13 M1","description":"The Apple M1 chip gives the 13‑inch MacBook Pro speed and power beyond belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. An advanced Neural Engine for up to 11x faster machine learning. And up to 20 hours of battery life so you can go all day. It’s our most popular pro notebook, taken to a whole new level.","price":"1299"},{"id":2,"name":"Apple Iphone 13 Pro","description":"description","price":"799"},{"id":3,"name":"Apple Airpods Pro","description":"AirPods Pro are the only in-ear headphones with Active Noise Cancellation that continuously adapts to the geometry of your ear and the fit of the ear tips — blocking out the world so you can focus on what you’re listening to.","price":"89.99"},{"id":4,"name":"Dell XPS 13","description":"Dell XPS 13 is a Windows 10 laptop with a 13.30-inch display that has a resolution of 3200x1800 pixels. It is powered by a Core i5 processor and it comes with 8GB of RAM.","price":"1299"},{"id":5,"name":"Google Pixel 6 ","description":"The Pixel 6 is the all-new flagship device with Tensor chip from Google. It has 128GB 8GB RAM of internal memory and a 411 ppi density","price":"699"},{"id":"4e87fa5f-0bf5-49f7-92c8-0ea4cfe023c5","name":"Sony Potrait Ultra Wide Camera","description":"The a new Sony super potrait camera features...","price":"2000"}]
+[
+    {
+        "id": 1,
+        "name": "Apple Macbook Pro 13 M1",
+        "description": "The Apple M1 chip gives the 13‑inch MacBook Pro speed and power beyond belief. With up to 2.8x CPU performance. Up to 5x the graphics speed. An advanced Neural Engine for up to 11x faster machine learning. And up to 20 hours of battery life so you can go all day. It’s our most popular pro notebook, taken to a whole new level.",
+        "price": "1299"
+    },
+    {
+        "id": 2,
+        "name": "Apple Iphone 13 Pro",
+        "description": "description",
+        "price": "799"
+    },
+    {
+        "id": 3,
+        "name": "Apple Airpods Pro",
+        "description": "AirPods Pro are the only in-ear headphones with Active Noise Cancellation that continuously adapts to the geometry of your ear and the fit of the ear tips — blocking out the world so you can focus on what you’re listening to.",
+        "price": "89.99"
+    },
+    {
+        "id": 4,
+        "name": "Google Pixel 7",
+        "description": "Coming soon...",
+        "price": "899"
+    },
+    {
+        "id": 5,
+        "name": "Dell XPS 13",
+        "description": "The sleak and highly performant XPS 13",
+        "price": "1099"
+    }
+]
